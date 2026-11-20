@@ -90,6 +90,9 @@ html,body{max-width:100%;overflow-x:hidden}
 .page-hero h1 .gradient-text{line-height:1.18!important;padding-bottom:.2em!important;overflow:visible!important;vertical-align:baseline!important}
 .idea-question{line-height:1.18!important;vertical-align:baseline!important}
 @media(max-width:650px){.page-hero h1{line-height:1.2!important}.page-hero h1 .gradient-text{line-height:1.2!important;padding-bottom:.22em!important}}
+/* Restore visible pastel gradient animation on Contact headline */
+.page-hero h1 .gradient-text{background-image:linear-gradient(100deg,#f5b8c9 0%,#c6c2f5 25%,#b8e4d6 50%,#f6d3a7 75%,#f5b8c9 100%)!important;background-size:350% 100%!important;background-position:0% 50%!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;animation:contactPastelFlow 5s linear infinite!important}
+@keyframes contactPastelFlow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 </style></head><body id="top">
 <header class="header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="Andy dè Creative home">
   <img src="assets/mark-black.svg" alt="" class="brand-mark">
