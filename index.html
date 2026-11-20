@@ -117,6 +117,11 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;ba
 .hero::before{inset:-160px -18vw -220px!important;background:radial-gradient(ellipse at 18% 10%,rgba(247,202,220,.28),transparent 58%),radial-gradient(ellipse at 75% 6%,rgba(205,201,246,.3),transparent 56%),radial-gradient(ellipse at 58% 72%,rgba(194,235,220,.22),transparent 58%)!important;filter:blur(24px)!important;opacity:.6!important;}
 [data-theme="dark"] body::before{opacity:.3}
 @media(max-width:650px){.hero::before{inset:-100px -28vw -140px!important;filter:blur(28px)!important}}
+
+/* Definitive pastel background fix — remove clipped hero pseudo-glow */
+.hero::before{display:none!important;content:none!important}
+body{background-color:var(--bg)!important;background-image:radial-gradient(ellipse at 16% 8%,rgba(247,202,220,.22),transparent 38%),radial-gradient(ellipse at 82% 12%,rgba(205,201,246,.22),transparent 36%),radial-gradient(ellipse at 52% 56%,rgba(194,235,220,.18),transparent 40%)!important;background-repeat:no-repeat!important;background-size:100% 100%!important;background-attachment:scroll!important}
+[data-theme="dark"] body{background-image:radial-gradient(ellipse at 16% 8%,rgba(160,94,128,.16),transparent 38%),radial-gradient(ellipse at 82% 12%,rgba(100,89,160,.18),transparent 36%),radial-gradient(ellipse at 52% 56%,rgba(74,130,105,.12),transparent 40%)!important}
 </style></head><body id="top">
 <header class="header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="Andy dè Creative home">
   <img src="assets/mark-black.svg" alt="" class="brand-mark">
