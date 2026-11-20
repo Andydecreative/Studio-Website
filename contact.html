@@ -50,6 +50,15 @@ input,select,textarea{outline:none}input:focus,select:focus,textarea:focus{borde
 .hero h1{overflow:visible;padding-right:.09em;letter-spacing:-.072em}.hero h1 .gradient-text{padding-right:.07em}
 @media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr}.footer-statement{grid-column:1/-1;grid-row:2;text-align:left;white-space:normal}.footer-nav{justify-content:flex-start}}
 @media(max-width:650px){.header-inner{gap:10px}.nav-links{margin-left:0}.footer-top{grid-template-columns:1fr;gap:22px}.footer-statement{grid-column:auto;grid-row:auto;text-align:left}.footer-nav{flex-direction:row;flex-wrap:wrap}.theme-toggle-floating{right:16px;bottom:16px}}
+
+/* Footer brand alignment matches the header */
+.footer-brand{display:flex;align-items:center;gap:12px;min-height:35px}
+.footer-mark{width:35px!important;height:35px!important;max-width:35px;max-height:35px;object-fit:contain;filter:var(--markfilter,none)}
+[data-theme="dark"] .footer-mark{filter:invert(1)}
+.footer-brand-copy{display:flex;flex-direction:column;gap:4px;line-height:1}
+.footer-brand-copy strong{font-size:15px;letter-spacing:-.045em;font-weight:750}
+.footer-brand-copy small{font-size:10px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
+.footer-bottom{justify-content:flex-start!important;align-items:flex-start;padding-left:0;text-align:left}
 </style></head><body id="top">
 <header class="header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="Andy dè Creative home">
   <img src="assets/mark-black.svg" alt="" class="brand-mark">
