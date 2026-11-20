@@ -110,6 +110,13 @@ input,select,textarea{outline:none}input:focus,select:focus,textarea:focus{borde
 [data-theme="dark"] .visual-card{background:linear-gradient(135deg,#49332f,#37314c 52%,#293c34)}
 [data-theme="dark"] .project-preview{background:linear-gradient(135deg,#44313d,#38334c 50%,#293d35)}
 @media(max-width:650px){.hero::before{inset:-20px -28vw 0;opacity:.85}.hero-art{background:linear-gradient(145deg,#fff4f7,#f3f0ff 50%,#eef8f3)}}
+
+/* Fix pastel background cropping: make the ambience global and edge-free */
+body{position:relative;background:var(--bg)}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 65% 48% at 18% 16%,rgba(247,202,220,.22),transparent 72%),radial-gradient(ellipse 62% 46% at 82% 24%,rgba(205,201,246,.24),transparent 72%),radial-gradient(ellipse 72% 56% at 52% 68%,rgba(194,235,220,.18),transparent 72%);}
+.hero::before{inset:-160px -18vw -220px!important;background:radial-gradient(ellipse at 18% 10%,rgba(247,202,220,.28),transparent 58%),radial-gradient(ellipse at 75% 6%,rgba(205,201,246,.3),transparent 56%),radial-gradient(ellipse at 58% 72%,rgba(194,235,220,.22),transparent 58%)!important;filter:blur(24px)!important;opacity:.6!important;}
+[data-theme="dark"] body::before{opacity:.3}
+@media(max-width:650px){.hero::before{inset:-100px -28vw -140px!important;filter:blur(28px)!important}}
 </style></head><body id="top">
 <header class="header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="Andy dè Creative home">
   <img src="assets/mark-black.svg" alt="" class="brand-mark">
