@@ -75,6 +75,9 @@ input,select,textarea{outline:none}input:focus,select:focus,textarea:focus{borde
 .section-head h2{letter-spacing:-.02em!important;padding:0 .12em 0 0!important;overflow:visible!important}
 .momentum-word{display:inline!important;background:none!important;background-image:none!important;background-clip:border-box!important;-webkit-background-clip:border-box!important;color:#e8a9c2!important;padding:0!important;margin:0!important;animation:momentumColor 6s ease-in-out infinite!important}
 @keyframes momentumColor{0%,100%{color:#e8a9c2}25%{color:#b9b4e8}50%{color:#9bcfbe}75%{color:#e8c28f}}
+/* Hard reset local typography to prevent momentum glyph cropping */
+.section-head h2{font-size:clamp(32px,5vw,64px)!important;letter-spacing:normal!important;line-height:1.08!important;overflow:visible!important;max-width:none!important;padding:0!important;margin:12px 0 0!important}
+.section-head h2 .momentum-word{display:inline!important;letter-spacing:normal!important;white-space:nowrap!important;overflow:visible!important;padding:0!important;margin:0!important;background:none!important;background-image:none!important;-webkit-background-clip:border-box!important;background-clip:border-box!important;color:#e8a9c2!important;animation:momentumColor 6s ease-in-out infinite!important}
 </style></head><body id="top">
 <header class="header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="Andy dè Creative home">
   <img src="assets/mark-black.svg" alt="" class="brand-mark">
