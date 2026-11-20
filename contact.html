@@ -85,6 +85,11 @@ html,body{max-width:100%;overflow-x:hidden}
 .page-hero.container{width:min(1180px,calc(100% - 48px))!important;margin-left:auto!important;margin-right:auto!important}
 @media(max-width:650px){.page-hero.container{width:min(1180px,calc(100% - 32px))!important}}
 .page-hero h1{max-width:1000px!important}
+/* Fix descender clipping on the 'g' in big */
+.page-hero h1{line-height:1.18!important;overflow:visible!important;padding-bottom:.08em!important}
+.page-hero h1 .gradient-text{line-height:1.18!important;padding-bottom:.2em!important;overflow:visible!important;vertical-align:baseline!important}
+.idea-question{line-height:1.18!important;vertical-align:baseline!important}
+@media(max-width:650px){.page-hero h1{line-height:1.2!important}.page-hero h1 .gradient-text{line-height:1.2!important;padding-bottom:.22em!important}}
 </style></head><body id="top">
 <header class="header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="Andy dè Creative home">
   <img src="assets/mark-black.svg" alt="" class="brand-mark">
