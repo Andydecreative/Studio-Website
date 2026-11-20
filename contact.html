@@ -59,6 +59,11 @@ input,select,textarea{outline:none}input:focus,select:focus,textarea:focus{borde
 .footer-brand-copy strong{font-size:15px;letter-spacing:-.045em;font-weight:750}
 .footer-brand-copy small{font-size:10px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
 .footer-bottom{justify-content:flex-start!important;align-items:flex-start;padding-left:0;text-align:left}
+/* CTA alignment refinement */
+.contact-panel{display:flex!important;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+.contact-panel>div{flex:1;min-width:240px}
+.contact-panel>a{margin-left:auto;align-self:center;white-space:nowrap}
+@media(max-width:650px){.contact-panel{align-items:flex-start}.contact-panel>a{margin-left:auto}}
 </style></head><body id="top">
 <header class="header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="Andy dè Creative home">
   <img src="assets/mark-black.svg" alt="" class="brand-mark">
