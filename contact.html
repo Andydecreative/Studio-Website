@@ -93,6 +93,16 @@ html,body{max-width:100%;overflow-x:hidden}
 /* Restore visible pastel gradient animation on Contact headline */
 .page-hero h1 .gradient-text{background-image:linear-gradient(100deg,#f5b8c9 0%,#c6c2f5 25%,#b8e4d6 50%,#f6d3a7 75%,#f5b8c9 100%)!important;background-size:350% 100%!important;background-position:0% 50%!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;animation:contactPastelFlow 5s linear infinite!important}
 @keyframes contactPastelFlow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+/* Dark-mode contrast repair: keep showcase/mockup text readable */
+[data-theme="dark"] .hero-art{background:linear-gradient(135deg,#202520,#272532 48%,#202b27)!important;color:#f5f5f0!important}
+[data-theme="dark"] .visual-card{background:linear-gradient(140deg,#302923,#302d3f,#25352f)!important;color:#f5f5f0!important}
+[data-theme="dark"] .project-preview{background:linear-gradient(135deg,#1d3332,#34324a,#263d35)!important;color:#f5f5f0!important}
+[data-theme="dark"] .browser{background:#1c211e!important;color:#f4f5f0!important}
+[data-theme="dark"] .browser-top{background:#2b302c!important}
+[data-theme="dark"] .browser-inner{color:#f4f5f0!important}
+[data-theme="dark"] .browser-inner small,[data-theme="dark"] .browser-inner span{color:#b7beb7!important}
+[data-theme="dark"] .art-badge{background:rgba(30,34,31,.6)!important;color:#f4f5f0!important;border-color:rgba(255,255,255,.2)!important}
 </style></head><body id="top">
 <header class="header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="Andy dè Creative home">
   <img src="assets/mark-black.svg" alt="" class="brand-mark">
